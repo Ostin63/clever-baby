@@ -1,0 +1,125 @@
+.header {
+  padding: 30px 15px;
+  display: flex;
+  color: var(--white);
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 45px;
+    display: grid;
+    grid-template-columns: 24px 25px 132px 1fr 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0;
+    grid-template-columns: 1fr 143px 57px 775px 195px 1fr;
+  }
+}
+
+.header__button-menu {
+  width: 24px;
+  height: 12px;
+  display: inline-block;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-block {
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    grid-column: 3 / 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.header__logo {
+  width: 111px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    height: 21px;
+    margin-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 143px;
+    height: 23px;
+    margin-top: 3px;
+  }
+}
+
+.header__nav {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    grid-column: 4 / 5;
+  }
+}
+
+.header__nav-item {
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.header__nav-link {
+  margin-top: 3px;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: $font-montserrat;
+  color: var(--special-black);
+}
+
+.header__phone {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    justify-content: space-between;
+    grid-column: -2 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 5 / -2;
+  }
+}
+
+.header__phone-link {
+  position: relative;
+  margin-left: 25px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: $font-montserrat;
+  color: var(--special-black);
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    left: -25px;
+    top: 5px;
+    background: url('../img/stack.svg#phone') 50% 50% no-repeat;
+    background-size: 15px 15px;
+  }
+}

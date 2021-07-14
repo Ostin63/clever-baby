@@ -87,21 +87,21 @@ const svgstack = () => {
 }
 exports.svgstack = svgstack;
 
-const copy = (done) => {
-  src([
-    "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/favicon/favicon.svg",
-    "source/*.webmanifest",
-    "source/leaflet/*.{css,js}",
-    "source/leaflet/images/*.png"
-  ], {
-    base: "source"
-  })
-    .pipe(dest("build"))
-  done();
-}
-exports.copy = copy;
+// const copy = (done) => {
+//   src([
+//     "source/fonts/*.{woff2,woff}",
+//     "source/*.ico",
+//     "source/img/favicon/favicon.svg",
+//     "source/*.webmanifest",
+//     "source/leaflet/*.{css,js}",
+//     "source/leaflet/images/*.png"
+//   ], {
+//     base: "source"
+//   })
+//     .pipe(dest("build"))
+//   done();
+// }
+// exports.copy = copy;
 
 const clean = () => {
   return del("build");
@@ -133,7 +133,7 @@ const watcher = () => {
 
 exports.default = series(
   clean,
-  copy,
+  // copy,
   parallel(
     styles,
     html,
