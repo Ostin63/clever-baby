@@ -1,0 +1,109 @@
+.views {
+  content: '';
+  background-image: url('../img/views-mobil.png');
+  background-size: 320px 486px;
+  background-position: 50% 150px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url('../img/views-tablet.png');
+    background-size: 342px 355px;
+    background-position: 58.45% 105px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../img/views-desktop.png');
+    background-size: 597px 472px;
+    background-position: 55% 124px;
+    background-repeat: no-repeat;
+  }
+}
+
+.views__item {
+  width: 257px;
+  padding-bottom: 22px;
+
+  &--immersion,
+  &--group {
+    width: 215px;
+    margin-left: auto;
+  }
+
+  &--educators {
+    margin-top: 238px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 138px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 304px;
+      margin-top: 200px;
+    }
+  }
+
+  &--intelligence {
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      margin-top: 0;
+    }
+  }
+
+  &--immersion {
+    @media (min-width: $tablet-width) {
+      margin-top: -146px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 249px;
+      margin-top: -171px;
+    }
+  }
+
+  &--group {
+    @media (min-width: $tablet-width) {
+      margin-top: -188px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      margin-top: -218px;
+    }
+  }
+}
+
+.views__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: $font-montserrat;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 322px;
+    font-size: 20px;
+  }
+}
+
+.views__text {
+  margin: 8px 0 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  font-family: $font-montserrat;
+
+  @media (min-width: $tablet-width) {
+    margin: 6px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 0;
+    font-size: 16px;
+  }
+}

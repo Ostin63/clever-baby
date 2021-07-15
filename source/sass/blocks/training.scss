@@ -1,0 +1,215 @@
+.training {
+  position: relative;
+  padding: 59px 15px 25px;
+  background: var(--white);
+
+  @media (min-width: $tablet-width) {
+    max-width: 931px;
+    margin: 0 auto;
+    padding: 101px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 121px 0;
+    display: grid;
+    grid-template-columns: 1fr 931px 1fr;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 67px;
+    height: 34px;
+    top: 16px;
+    right: 15px;
+    background: url('../img/rocket-mobil.png') 50% 50% no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 101px;
+      height: 50px;
+      top: 60px;
+      right: 45px;
+      background: url('../img/rocket- tablet.png') 50% 50% no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.training__title {
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: $font-rubik;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    grid-column: 2 / -2;
+
+    &::after {
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        content: '';
+        width: 135px;
+        height: 68px;
+        top: -59px;
+        right: -60px;
+        background: url('../img/rocket-desktop.png') 50% 50% no-repeat;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 135px;
+      height: 141px;
+      top: 108px;
+      left: -193px;
+      background: url('../img/girl.png')50% 50% no-repeat;
+    }
+  }
+}
+
+.training__wrapper-top {
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 19px 0 -19px;
+    padding-top: 65px;
+  }
+}
+
+.training__wrapper-text {
+  width: 283px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 414px;
+  }
+}
+
+.training__text-play {
+  width: 176px;
+  margin: 30px 0 15px;
+  margin-left: -3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: $font-montserrat;
+
+  @media (min-width: $tablet-width) {
+    width: 198px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 414px;
+    font-size: 20px;
+    margin: 0 0 18px;
+  }
+}
+
+.training__text {
+  margin: 10px 0 0 -3px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  font-family: $font-montserrat;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+}
+
+.training__video {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
+}
+
+.training__video-title {
+  width: 229px;
+  margin: 0 0 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: left;
+  font-family: $font-montserrat;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    font-size: 20px;
+  }
+}
+
+.training__video-link {
+  width: 290px;
+  height: 262px;
+  display: flex;
+  margin: 0 auto;
+  background: url('../img/video-mobil.jpg') 0 0 no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 262px;
+    margin: 0;
+    display: inline-block;
+    background: url('../img/video-tablet.jpg') 0 0 no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    height: 231px;
+    background: url('../img/video-desktop.jpg') 0 0 no-repeat;
+  }
+}
+
+.training__views {
+  padding-top: 56px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 931px;
+    margin: 0 auto;
+    padding: 157px 0 167px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 19px 0 -19px;
+    padding-top: 201px;
+    grid-column: 2 / -2;
+  }
+}

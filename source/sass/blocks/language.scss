@@ -1,0 +1,141 @@
+.language {
+  position: relative;
+  background: url('../img/main-photo-320.png') 0 0 no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url('../img/main-photo-tablet.png') 100% 100% no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 100px max-content 703px 1fr;
+    background: url('../img/main-photo-desktop.png') 100% 100% no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 38px;
+    top: 12px;
+    left: 3px;
+    background: url('../img/car-mobil.png') 0 0 no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 58px;
+      height: 46px;
+      top: 31px;
+      left: 10px;
+      background: url('../img/car-tablet.png') 0 0 no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: none;
+    }
+  }
+}
+
+.language__block {
+  padding: 57px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 86px 45px 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 6px;
+    padding: 130px 0 160px;
+    grid-column: 3 / 4;
+  }
+}
+
+.language__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  font-family: $font-rubik;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 106px;
+      height: 84px;
+      top: -93px;
+      left: -134px;
+      background: url('../img/car-desktop.png') 0 0 no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 91px;
+      height: 62px;
+      top: -65px;
+      right: -710px;
+      background: url('../img/cloud.png') 0 0 no-repeat;
+    }
+  }
+}
+
+.language__title-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: $font-rubik;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.language__text {
+  width: 224px;
+  margin-top: 11px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  font-family: $font-montserrat;
+
+  @media (min-width: $tablet-width) {
+    width: 375px;
+    margin-top: 22px;
+    margin-bottom: 38px;
+    font-size: 16px
+  }
+}
+
+.language__button-link {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--special-yellow);
+  border-radius: 35px;
+  color: var(--special-black);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: $font-montserrat;
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
