@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik:wght@500&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -136,54 +137,48 @@
       </ol>
     </section>
     <section class="teachers">
-      <h2 class="teachers__title">Наши преподаватели</h2>
-      <p class="teachers__text">Все наши преподаватели — носители английского языка и имеют необходимое образование и
-        опыт работы с детьми</p>
-      <ul class="teachers__slider owl-carousel">
-        <li class="teachers__item">
+      <div class="teachers__top-wrapper">
+        <h2 class="teachers__title">Наши преподаватели</h2>
+        <p class="teachers__text">Все наши преподаватели — носители английского языка и имеют необходимое образование и
+          опыт работы с детьми</p>
+      </div>
+      <div class="teachers__slider owl-carousel">
+        <div class="teachers__item">
           <picture>
             <source media="(min-width: 1366px)" srcset="img/teachers-1366-1.jpg">
             <source media="(min-width: 768px)" srcset="img/teachers-768-1.jpg">
-            <img class="teachers__img" src="img/teachers-320-1.jpg" alt="foto-teacher-1">
+            <img class="teachers__img" src="img/teachers-320-1.jpg" width="290" height="232" alt="foto-teacher-1">
           </picture>
           <p class="teachers__item-name">Kate Smith</p>
           <p class="teachers__item-country">США</p>
-        </li>
-        <li class="teachers__item">
+        </div>
+        <div class="teachers__item">
           <picture>
             <source media="(min-width: 1366px)" srcset="img/teachers-1366-2.jpg">
             <source media="(min-width: 768px)" srcset="img/teachers-768-2.jpg">
-            <img class="teachers__img" src="img/teachers-320-2.jpg" alt="foto-teacher-2">
+            <img class="teachers__img" src="img/teachers-320-2.jpg" width="290" height="232" alt="foto-teacher-2">
           </picture>
           <p class="teachers__item-name">Samuel King</p>
           <p class="teachers__item-country">США</p>
-        </li>
-        <li class="teachers__item">
+        </div>
+        <div class="teachers__item">
           <picture>
             <source media="(min-width: 1366px)" srcset="img/teachers-1366-3.jpg">
             <source media="(min-width: 768px)" srcset="img/teachers-768-3.jpg">
-            <img class="teachers__img" src="img/teachers-320-3.jpg" alt="foto-teacher-3">
+            <img class="teachers__img" src="img/teachers-320-3.jpg" width="290" height="232" alt="foto-teacher-3">
           </picture>
           <p class="teachers__item-name">Nikole Young</p>
           <p class="teachers__item-country">Канада</p>
-        </li>
-        <li class="teachers__item">
+        </div>
+        <div class="teachers__item">
           <picture>
             <source media="(min-width: 1366px)" srcset="img/teachers-1366-4.jpg">
             <source media="(min-width: 768px)" srcset="img/teachers-768-4.jpg">
-            <img class="teachers__img" src="img/teachers-320-4.jpg" alt="foto-teacher-4">
+            <img class="teachers__img" src="img/teachers-320-4.jpg" width="290" height="232" alt="foto-teacher-4">
           </picture>
           <p class="teachers__item-name">Karoline Bush</p>
           <p class="teachers__item-country">Канада</p>
-        </li>
-      </ul>
-      <div class="teachers__rows">
-        <button class="teachers__rows-left">
-          <span class="visually-hidden">влево</span>
-        </button>
-        <button class="teachers__rows-rigth">
-          <span class="visually-hidden">вправо</span>
-        </button>
+        </div>
       </div>
     </section>
     <section class="recording">
@@ -230,7 +225,9 @@
     <p class="footer__copyright"><span>&copy;</span>Политика конфиденциальности</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+  <script src="js/libs/jQuery3.3.1.min.js"> </script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
