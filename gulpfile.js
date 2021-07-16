@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const svgsprite = require("gulp-svg-sprite");
 const del = require("del");
 const sync = require("browser-sync").create();
+const owlCarousel = require('owl.carousel');
 
 const styles = () => {
   return src("source/sass/style.scss")

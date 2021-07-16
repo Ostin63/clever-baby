@@ -6,11 +6,11 @@
   @media (min-width: $tablet-width) {
     max-width: 931px;
     margin: 0 auto;
-    padding: 101px 45px;
+    padding: 101px 45px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 121px 0;
+    padding: 121px 0 30px;
     display: grid;
     grid-template-columns: 1fr 931px 1fr;
   }
@@ -204,7 +204,7 @@
   @media (min-width: $tablet-width) {
     max-width: 931px;
     margin: 0 auto;
-    padding: 157px 0 167px;
+    padding: 157px 0 137px;
   }
 
   @media (min-width: $desktop-width) {
