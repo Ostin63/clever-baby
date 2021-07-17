@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik:wght@500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="leaflet/leaflet.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -202,30 +203,46 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Мы ждем вас</h2>
-      <div class="contacts__block">
-        <p class="contacts__title">Приходите к нам:</p>
-        <p class="contacts__text">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+      <div class="contacts__wrapper-info">
+        <h2 class="contacts__title">Мы ждем вас</h2>
+        <div class="contacts__block contacts__block--address">
+          <p class="contacts__title-block">Приходите к нам:</p>
+          <p class="contacts__text">Санкт-Петербург,<br>ул. Большая Конюшенная, 19</p>
+        </div>
+        <div class="contacts__block contacts__block--time">
+          <p class="contacts__title-block">Режим работы:</p>
+          <p class="contacts__text">Пн-Сб, с 9-00 до 20-00</p>
+        </div>
+        <div class="contacts__block contacts__block--phone">
+          <p class="contacts__title-block">Позвоните нам:</p>
+          <p class="contacts__text">+ 7 (495) 983-47-19</p>
+        </div>
+        <div class="contacts__block contacts__block--mail">
+          <p class="contacts__title-block">Напишите нам:</p>
+          <p class="contacts__text">info@cleverbaby.ru</p>
+        </div>
+        <div class="contacts__block contacts__block--social">
+          <p class="contacts__title-block">Мы в соцсетях:</p>
+          <ul class="contacts__wrapper-social">
+            <li>
+              <a class="contacts__social contacts__social--facebook">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="contacts__social contacts__social--vk">
+                <span class="visually-hidden">vk</span>
+              </a>
+            </li>
+            <li>
+              <a class="contacts__social contacts__social--instagram">
+                <span class="visually-hidden">instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="contacts__block">
-        <p class="contacts__title">Режим работы:</p>
-        <p class="contacts__text">Пн-Сб, с 9-00 до 20-00</p>
-      </div>
-      <div class="contacts__block">
-        <p class="contacts__title">Позвоните нам:</p>
-        <p class="contacts__phone">+ 7 (495) 983-47-19</p>
-      </div>
-      <div class="contacts__block">
-        <p class="contacts__title">Напишите нам:</p>
-        <p class="contacts__mail">info@cleverbaby.ru</p>
-      </div>
-      <div class="contacts__block">
-        <p class="contacts__title">Мы в соцсетях:</p>
-        <a class="contacts__facebook"></a>
-        <a class="contacts__vk"></a>
-        <a class="contacts__instagram"></a>
-      </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map"  id="map"></div>
     </section>
   </main>
   <footer class="footer">
@@ -236,6 +253,7 @@
 
   <script src="js/libs/jQuery3.3.1.min.js"> </script>
   <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="leaflet/leaflet.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 

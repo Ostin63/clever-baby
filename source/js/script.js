@@ -20,6 +20,36 @@ $(document).ready(function () {
       }
     }
   });
-  
-  $('.owl-nav').removeClass('disabled');
 });
+
+const map = L.map('map')
+  .setView({
+    lat: 59.938667,
+    lng: 30.323073,
+  }, 17);
+
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  },
+).addTo(map);
+
+const mainPinIcon = L.icon({
+  iconUrl: 'img/stack.svg#pin',
+  iconSize: [32, 39],
+  iconAnchor: [16, 39],
+});
+
+const mainPinMarker = L.marker(
+  {
+    lat: 59.938667,
+    lng: 30.323073,
+  },
+  {
+    icon: mainPinIcon,
+  },
+);
+
+mainPinMarker.addTo(map);
+
