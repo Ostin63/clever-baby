@@ -20,6 +20,26 @@ $(document).ready(function () {
       }
     }
   });
+
+  const onShowModal = () => {
+    $('.modal-menu').removeClass('d-none');
+    $('.modal-overlay').removeClass('d-none');
+  }
+
+  const onRemoveModal = () => {
+    $('.modal-menu').addClass('d-none');
+    $('.modal-overlay').addClass('d-none');
+  }
+
+  $('.header__button-menu').click(onShowModal);
+  $('.modal-manu__close').click(onRemoveModal);
+
+  $(window).resize(function () {
+    const win = $(this);
+    if (win.width() >= 1384) {
+      onRemoveModal();
+    }
+  });
 });
 
 const map = L.map('map')

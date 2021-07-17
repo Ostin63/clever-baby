@@ -74,6 +74,7 @@
 }
 
 .views__title {
+  display: block;
   margin: 0;
   font-style: normal;
   font-weight: 500;
@@ -81,8 +82,12 @@
   font-family: $font-montserrat;
 
   @media (min-width: $tablet-width) {
-    width: 290px;
     font-size: 18px;
+
+    &--intelligence,
+    &--educators {
+      width: 290px;
+    }
   }
 
   @media (min-width: $desktop-width) {

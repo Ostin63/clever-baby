@@ -85,6 +85,15 @@
   line-height: 140%;
   font-family: $font-montserrat;
   color: var(--special-black);
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__phone {
@@ -120,5 +129,14 @@
     top: 5px;
     background: url('../img/stack.svg#phone') 50% 50% no-repeat;
     background-size: 15px 15px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,0 +1,16 @@
+.footer {
+  padding: 40px 15px;
+  @media (min-width: $tablet-width){
+    padding: 41px 45px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  font-family: $font-montserrat;
+}

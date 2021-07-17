@@ -198,4 +198,13 @@
     height: 50px;
     margin-top: 34px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

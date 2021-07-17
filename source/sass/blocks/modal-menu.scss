@@ -1,0 +1,105 @@
+.modal-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 30px 15px 40px;
+  background: var(--background-modal);
+  z-index: 1020;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.modal-menu__top-block {
+  display: flex;
+}
+
+.modal-manu__close {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url('../img/stack.svg#close') 50% 50% no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.modal-manu__block-img {
+  margin-left: 15px;
+}
+
+.madal-menu__logo {
+  width: 111px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    height: 21px;
+  }
+}
+
+.modal-menu__nav {
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 39px;
+  }
+}
+
+.modal-menu__nav-item {
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+}
+
+.modal-menu__nav-link,
+.modal-menu__phone-link {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  font-family: $font-montserrat;
+  color: var(--special-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.modal-menu__phone {
+  margin-top: 35px;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -32,19 +32,19 @@
 
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a class="header__nav-link" href="">Методика</a>
+        <a class="header__nav-link" href="#1">Методика</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="">Преподаватели</a>
+        <a class="header__nav-link" href="#2">Преподаватели</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="">Группы</a>
+        <a class="header__nav-link" href="#3">Группы</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="">Отзывы</a>
+        <a class="header__nav-link" href="#">Отзывы</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="">Контакты</a>
+        <a class="header__nav-link" href="#4">Контакты</a>
       </li>
     </ul>
     <div class="header__phone">
@@ -61,7 +61,7 @@
         <a class="language__button-link" href="#">Записаться</a>
       </div>
     </section>
-    <section class="training">
+    <section class="training" id="1">
       <h2 class="training__title">Как проходит обучение</h2>
       <div class="training__wrapper-top">
         <div class="training__wrapper-text">
@@ -84,26 +84,26 @@
       </div>
       <ul class="training__views views">
         <li class="views__item views__item--intelligence">
-          <p class="views__title">Развитие 10 видов интеллекта</p>
+          <p class="views__title views__title--intelligence">Развитие 10 видов интеллекта</p>
           <p class="views__text">Учимся общаться, развивать эмоциональный, творческий интеллект и многое другое</p>
         </li>
         <li class="views__item views__item--immersion">
-          <p class="views__title">Языковое погружение</p>
+          <p class="views__title views__title--immersion">Языковое погружение</p>
           <p class="views__text">Занятия проходят полностью на английском языке, независимо от типа задания</p>
         </li>
         <li class="views__item views__item--educators">
-          <p class="views__title">Педагоги — носители языка</p>
+          <p class="views__title views__title--educators">Педагоги — носители языка</p>
           <p class="views__text">Занятия ведут преподаватели из&nbsp;США, Великобритании
             и&nbsp;Канады, для которых английский язык является родным</p>
         </li>
         <li class="views__item views__item--group">
-          <p class="views__title">Небольшие группы</p>
+          <p class="views__title views__title--group">Небольшие группы</p>
           <p class="views__text">Дети занимаются в группах до 5 человек, что позволяет применять индивидуальный подход к
             каждому</p>
         </li>
       </ul>
     </section>
-    <section class="group">
+    <section class="group" id="3">
       <div class="group__wrapper-top">
         <h2 class="group__title">Наши группы</h2>
         <p class="group__text">В группах занимается до 5 человек. Все дети в группе примерно одного&nbsp;возраста и
@@ -140,7 +140,7 @@
         </li>
       </ol>
     </section>
-    <section class="teachers">
+    <section class="teachers" id="2">
       <div class="teachers__top-wrapper">
         <h2 class="teachers__title">Наши преподаватели</h2>
         <p class="teachers__text">Все наши преподаватели — носители английского языка и&nbsp;имеют необходимое
@@ -198,11 +198,12 @@
     <section class="recording">
       <div class="recording__wrapper">
         <h2 class="recording__title">Запишитесь на&nbsp;бесплатное пробное занятие</h2>
-        <p class="recording__text">Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе и&nbsp;ответим на все ваши вопросы</p>
+        <p class="recording__text">Приходите к нам в гости и мы познакомим вас с педагогами, расскажем о школе
+          и&nbsp;ответим на все ваши вопросы</p>
         <a class="recording__link" href="#">Записаться</a>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="4">
       <div class="contacts__wrapper-info">
         <h2 class="contacts__title">Мы ждем вас</h2>
         <div class="contacts__block contacts__block--address">
@@ -242,14 +243,49 @@
           </ul>
         </div>
       </div>
-      <div class="contacts__map"  id="map"></div>
+      <div class="contacts__map" id="map"></div>
     </section>
   </main>
   <footer class="footer">
-    <p class="footer__name-site">CleverBaby</p>
-    <p class="footer__data">2020 Все права защищены</p>
-    <p class="footer__copyright"><span>&copy;</span>Политика конфиденциальности</p>
+    <p class="footer__text footer__text--name-site">CleverBaby &copy; 2020 Все права защищены</p>
+    <p class="footer__text footer__text--copyright">Политика конфиденциальности</p>
   </footer>
+
+  <div class="modal-menu d-none">
+    <div class="modal-menu__top-block">
+      <a href="#" class="modal-manu__close">
+        <span class="visually-hidden">close</span>
+      </a>
+      <div class="modal-manu__block-img">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo/top-logo-768.png">
+          <img class="madal-menu__logo" src="img/logo/top-logo-320.png" width="111" height="17" alt="Логотип">
+        </picture>
+      </div>
+    </div>
+    <ul class="modal-menu__nav">
+      <li class="modal-menu__nav-item">
+        <a class="modal-menu__nav-link" href="#1">Методика</a>
+      </li>
+      <li class="modal-menu__nav-item">
+        <a class="modal-menu__nav-link" href="#2">Преподаватели</a>
+      </li>
+      <li class="modal-menu__nav-item">
+        <a class="modal-menu__nav-link" href="#3">Группы</a>
+      </li>
+      <li class="modal-menu__nav-item">
+        <a class="modal-menu__nav-link" href="#">Отзывы</a>
+      </li>
+      <li class="modal-menu__nav-item">
+        <a class="modal-menu__nav-link" href="#4">Контакты</a>
+      </li>
+    </ul>
+    <div class="modal-menu__phone">
+      <a class="modal-menu__phone-link" href="tel:+74959834719">+ 7 (495) 983-47-19</a>
+    </div>
+  </div>
+  
+  <div class="modal-overlay d-none"></div>
 
   <script src="js/libs/jQuery3.3.1.min.js"> </script>
   <script src="js/libs/owl.carousel.min.js"></script>
