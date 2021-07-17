@@ -1,0 +1,133 @@
+.recording {
+  background: url('../img/banner-mobil.png') 50% 50% no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background: url('../img/banner-tablet.png') 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url('../img/banner-desktop.png') 100% 100% no-repeat;
+    background-size: cover;
+  }
+}
+
+.recording__wrapper {
+  padding: 65px 40px 70px;
+
+  @media (min-width: $tablet-width) {
+    padding: 110px 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 0 100px;
+  }
+}
+
+.recording__title {
+  width: 187px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+  font-family: $font-rubik;
+  color: var(--special-white);
+
+  @media (min-width: $tablet-width) {
+    width: 502px;
+    padding-left: 12px;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.recording__text {
+  margin: 22px 0 25px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  font-family: $font-montserrat;
+  color: var(--special-white);
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 330px;
+    margin: 15px auto 31px;
+    padding-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    margin: 19px auto 35px;
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: '';
+      width: 121px;
+      height: 104px;
+      top: -14px;
+      left: -201px;
+      background: url('../img/rainbow-tablet.png') 50% 50% no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 185px;
+      height: 160px;
+      top: -109px;
+      left: -358px;
+      background: url('../img/rainbow-desktop.png') 50% 50% no-repeat;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: '';
+      width: 78px;
+      height: 89px;
+      top: -50px;
+      right: -170px;
+      background: url('../img/boy-tablet.png') 50% 50% no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 118px;
+      height: 133px;
+      top: -49px;
+      right: -256px;
+      background: url('../img/boy-desktop.png') 50% 50% no-repeat;
+    }
+  }
+}
+
+.recording__link {
+  width: 152px;
+  height: 44px;
+  margin: 0 auto;
+  border-radius: 35px;
+  background: var(--special-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: $font-montserrat;
+
+  @media (min-width: $desktop-width) {
+    width: 166px;
+    height: 50px;
+  }
+}

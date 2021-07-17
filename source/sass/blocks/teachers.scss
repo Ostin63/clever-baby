@@ -1,14 +1,14 @@
 .teachers {
   max-width: 970px;
   margin: 0 auto;
-  padding: 55px 15px;
+  padding: 55px 15px 47px;
 
   @media (min-width: $tablet-width) {
-    padding: 113px 45px;
+    padding: 113px 45px 110px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 126px 0;
+    padding: 126px 0 130px;
   }
 }
 
@@ -41,6 +41,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: '';
+      width: 44px;
+      height: 132px;
+      bottom: -394px;
+      left: -146px;
+      background: url('../img/pencil.png') 50% 50% no-repeat;
+    }
   }
 }
 
