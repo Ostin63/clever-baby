@@ -33,6 +33,7 @@ $(document).ready(function () {
 
   $('.header__button-menu').click(onShowModal);
   $('.modal-manu__close').click(onRemoveModal);
+  $('.modal-menu__nav-link').click(onRemoveModal);
 
   $(window).resize(function () {
     const win = $(this);
