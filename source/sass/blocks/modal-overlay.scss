@@ -4,6 +4,6 @@
   backdrop-filter: blur(5px);
   width: 100%;
   height: 100%;
-  background: rgba(255, 254, 253, 0.8);
+  background: var(--white-80);
   z-index: 1010;
 }

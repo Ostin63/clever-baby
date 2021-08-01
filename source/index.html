@@ -253,10 +253,10 @@
 
   <div class="modal-menu d-none">
     <div class="modal-menu__top-block">
-      <a href="#" class="modal-manu__close">
+      <a href="#" class="modal-menu__close">
         <span class="visually-hidden">close</span>
       </a>
-      <div class="modal-manu__block-img">
+      <div class="modal-menu__block-img">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo/top-logo-768.png">
           <img class="madal-menu__logo" src="img/logo/top-logo-320.png" width="111" height="17" alt="Логотип">
@@ -284,7 +284,50 @@
       <a class="modal-menu__phone-link" href="tel:+74959834719">+ 7 (495) 983-47-19</a>
     </div>
   </div>
-  
+
+  <div class="modal-form  d-none">
+    <form class="modal-form__sign-up" id="sign-up" action="https://echo.htmlacademy.ru/" method="post">
+      <a href="#" class="modal-form__close">
+        <span class="visually-hidden">close</span>
+      </a>
+      <h2 class="modal-form__title">Запишитесь на бесплатное пробное занятие</h2>
+      <div class="modal-form__wrapper-input">
+        <label class="modal-form__label" for="name">Ваше имя<sup>*</sup></label>
+        <input class="modal-form__input modal-form__input--name" type="text" id="name" name="name" minlength="2" placeholder="Эля" required>
+        <label class="modal-form__error" for="name">Обязательное поле</label>
+      </div>
+      <div class="modal-form__wrapper-input">
+        <label class="modal-form__label" for="phone">Телефон<sup>*</sup></label>
+        <input class="modal-form__input modal-form__input--phone" type="tel" id="phone" name="phone" minlength="12" placeholder="+77777777777" required>
+        <label class="modal-form__error" for="name">Обязательное поле</label>
+      </div>
+      <div class="modal-form__wrapper-input">
+        <label class="modal-form__label" for="mail">Почта<sup>*</sup></label>
+        <input class="modal-form__input modal-form__input--mail" type="text" id="mail" name="mail" placeholder="info@elya.ru" required>
+        <label class="modal-form__error" for="name">Обязательное поле</label>
+      </div>
+      <button class="modal-form__submit" type="submit">отправить</button>
+    </form>
+  </div>
+
+  <div class="alert">
+    <!-- Сообщение об успешном создании объявления -->
+    <template id="alert__success">
+      <div class="alert__success">
+        <p class="alert__success-message">C вами в течении 15 минут</p>
+      </div>
+    </template>
+
+    <!-- Сообщение об ошибке при загрузке -->
+    <template id="alert__error-loading">
+      <div class="alert__error-loading">
+        <p class="alert__error-loading-messege">
+          Произошла ошибка при загрузке данных с сервера :<br>( Обновите страницу!)
+        </p>
+      </div>
+    </template>
+  </div>
+
   <div class="modal-overlay d-none"></div>
 
   <script src="js/libs/jQuery3.3.1.min.js"> </script>

@@ -138,4 +138,13 @@
     height: 50px;
     font-size: 16px;
   }
+
+  &:hover,
+  &:focus {
+    background: var(--special-pink);
+  }
+
+  &:active {
+    background: var(--special-blue);
+  }
 }

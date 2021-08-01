@@ -183,28 +183,46 @@
 
   &--one {
     background: var(--special-blue);
+
+    &:hover,
+    &:focus {
+      background: var(--special-pink);
+    }
+
+    &:active {
+      background: var(--special-yellow);
+    }
   }
 
   &--two {
     background: var(--special-yellow);
+
+    &:hover,
+    &:focus {
+      background: var(--special-pink);
+    }
+
+    &:active {
+      background: var(--special-blue);
+    }
   }
 
   &--three {
     background: var(--special-pink);
+
+    &:hover,
+    &:focus {
+      background: var(--special-yellow);
+    }
+
+    &:active {
+      background: var(--special-blue);
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 166px;
     height: 50px;
     margin-top: 34px;
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

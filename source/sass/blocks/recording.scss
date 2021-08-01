@@ -2,6 +2,7 @@
   background: url('../img/banner-mobil.png') 50% 50% no-repeat;
   background-size: cover;
 
+
   @media (min-width: $tablet-width) {
     background: url('../img/banner-tablet.png') 50% 50% no-repeat;
     background-size: cover;
@@ -133,10 +134,10 @@
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    background: var(--special-pink);
   }
 
   &:active {
-    opacity: 0.3;
+    background: var(--special-blue);
   }
 }

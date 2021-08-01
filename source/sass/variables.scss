@@ -1,4 +1,5 @@
 $tablet-width: 768px;
+$tablet-width-onli: 615px;
 $desktop-width: 1366px;
 
 $font-montserrat: 'Montserrat', "Arial", sans-serif;
@@ -9,17 +10,27 @@ $font-rubik: 'Rubik', "Arial", sans-serif;
   --gray: #677085;
   --blue: #f7fafc;
   --mild-blue: #f7fafC;
+  --white-80: rgba(255, 254, 253, 0.8);
   --gray-30: rgba(217, 217, 217, 0.3);
   --special-white: #fefcfa;
   --special-yellow: #ffd787;
   --special-blue: #8dd9e5;
   --special-black: #122659;
   --special-pink: #feb9cc;
+  --yellow-focus: #f5af25;
+  --blue-focus: #0e8ca0;
+  --pink-focus: #ec88a5;
+  --special-red: #e7245b;
   --background-modal: #fefcfa;
 }
 
 $border-blue: 3px solid var(--special-blue);
 $border-yellow: 3px solid var(--special-yellow);
 $border-pink: 3px solid var(--special-pink);
+$border-focus-blue: 3px solid var(--blue-focus);
+$border-focus-yellow: 3px solid var(--yellow-focus);
+$border-focus-pink: 3px solid var(--pink-focus);
+$border-gray: 3px solid var(--gray);
+$border-red: 3px solid var(--special-red);
 $shadow: 0px 4px 40px var(--gray-30);
 $radius-12: 12px 12px 0px 0px;
