@@ -13,10 +13,15 @@
 }
 
 .modal-form__sign-up {
-  padding: 50px 15px;
+  padding: 15px;
   border: $border-gray;
   border-radius: 12px;
   background: var(--mild-blue);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .modal-form__close {
@@ -131,7 +136,6 @@
 .modal-form__submit {
   width: 152px;
   height: 44px;
-  margin-top: 30px;
   margin-left: calc(50% - 152px / 2);
   border: none;
   border-radius: 35px;
@@ -150,5 +154,9 @@
 
   &:active {
     background: var(--special-blue);
+  }
+
+  @media (min-width: $tablet-width){
+    margin-top: 30px;
   }
 }
