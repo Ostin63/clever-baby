@@ -137,15 +137,15 @@
   background-size: cover;
 
   &--facebook {
-    background: url('../img/stack.svg#facebook') 50% 50% no-repeat;
+    background: url("../img/stack.svg#facebook") 50% 50% no-repeat;
   }
 
   &--vk {
-    background: url('../img/stack.svg#vk') 50% 50% no-repeat;
+    background: url("../img/stack.svg#vk") 50% 50% no-repeat;
   }
 
   &--instagram {
-    background: url('../img/stack.svg#instagram') 50% 50% no-repeat;
+    background: url("../img/stack.svg#instagram") 50% 50% no-repeat;
   }
 
   &:hover,
